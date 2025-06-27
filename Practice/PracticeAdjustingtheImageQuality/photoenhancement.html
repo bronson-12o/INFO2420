@@ -6,81 +6,79 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background-color: #f9f9f9;
       padding: 20px;
     }
     h1 {
       text-align: center;
     }
-    .photo-pair {
-      display: flex;
-      justify-content: space-around;
+    table {
+      width: 100%;
       margin-bottom: 40px;
-      background: #fff;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-collapse: collapse;
     }
-    .photo-section {
+    td {
       text-align: center;
-      width: 45%;
+      padding: 10px;
+      vertical-align: top;
     }
-    .photo-section img {
-      max-width: 100%;
-      border-radius: 5px;
+    img {
+      width: 80%;
+      border: 2px solid #ccc;
+      border-radius: 6px;
     }
     .label {
-      margin-top: 10px;
       font-weight: bold;
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
+
   <h1>Photo Enhancement Basics</h1>
 
-  <div class="photo-pair">
-    <div class="photo-section">
-      <img src="photo_enhancement_basics/Brightness_Contrast1.jpg" alt="Original Brightness">
-      <div class="label">Original: Brightness_Contrast1.jpg</div>
-    </div>
-    <div class="photo-section">
-      <img src="photo_enhancement_basics_edited/Brightness_Contrast1-edited.jpg" alt="Edited Brightness">
-      <div class="label">Edited: Brightness_Contrast1-edited.jpg</div>
-    </div>
-  </div>
-
-  <div class="photo-pair">
-    <div class="photo-section">
-      <img src="photo_enhancement_basics/Hue_Saturation2.jpg" alt="Original Hue2">
-      <div class="label">Original: Hue_Saturation2.jpg</div>
-    </div>
-    <div class="photo-section">
-      <img src="photo_enhancement_basics_edited/Hue_Saturation2-edited.jpeg" alt="Edited Hue2">
-      <div class="label">Edited: Hue_Saturation2-edited.jpeg</div>
-    </div>
-  </div>
-
-  <div class="photo-pair">
-    <div class="photo-section">
-      <img src="photo_enhancement_basics/Hue_Saturation1.jpg" alt="Original Hue1">
-      <div class="label">Original: Hue_Saturation1.jpg</div>
-    </div>
-    <div class="photo-section">
-      <img src="photo_enhancement_basics_edited/Hue_Saturation2-edited.jpg" alt="Edited Hue1">
-      <div class="label">Edited: Hue_Saturation2-edited.jpg</div>
-    </div>
-  </div>
-
-  <div class="photo-pair">
-    <div class="photo-section">
-      <img src="photo_enhancement_basics/Vibrance.jpg" alt="Original Vibrance">
-      <div class="label">Original: Vibrance.jpg</div>
-    </div>
-    <div class="photo-section">
-      <img src="photo_enhancement_basics_edited/Vibrance1-edited.jpg" alt="Edited Vibrance">
-      <div class="label">Edited: Vibrance1-edited.jpg</div>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <td>
+        <img src="photo_enhancement_basics/Brightness_Contrast1.jpg" alt="Original Brightness">
+        <div class="label">Original: Brightness_Contrast1.jpg</div>
+      </td>
+      <td>
+        <img src="photo_enhancement_basics_edited/Brightness_Contrast1-edited.jpg" alt="Edited Brightness">
+        <div class="label">Edited: Brightness_Contrast1-edited.jpg</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="photo_enhancement_basics/Hue_Saturation2.jpg" alt="Original Hue2">
+        <div class="label">Original: Hue_Saturation2.jpg</div>
+      </td>
+      <td>
+        <img src="photo_enhancement_basics_edited/Hue_Saturation2-edited.jpeg" alt="Edited Hue2">
+        <div class="label">Edited: Hue_Saturation2-edited.jpeg</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="photo_enhancement_basics/Hue_Saturation1.jpg" alt="Original Hue1">
+        <div class="label">Original: Hue_Saturation1.jpg</div>
+      </td>
+      <td>
+        <img src="photo_enhancement_basics_edited/Hue_Saturation2-edited.jpg" alt="Edited Hue1">
+        <div class="label">Edited: Hue_Saturation2-edited.jpg</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="photo_enhancement_basics/Vibrance.jpg" alt="Original Vibrance">
+        <div class="label">Original: Vibrance.jpg</div>
+      </td>
+      <td>
+        <img src="photo_enhancement_basics_edited/Vibrance1-edited.jpg" alt="Edited Vibrance">
+        <div class="label">Edited: Vibrance1-edited.jpg</div>
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>
