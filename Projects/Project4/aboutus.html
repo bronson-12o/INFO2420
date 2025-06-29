@@ -3,124 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us: Native Cooking</title>
-<style>
-  body {
-    background-color: #fffaf0;
-    color: #222222;
-    font-family: Arial, sans-serif;
-    font-size: 100%;
-  }
+  <style>
+    @font-face {
+      font-family: 'Staatliches';
+      src: url('Fonts/Staatliches-Regular.ttf') format('truetype');
+    }
 
-  h1, h2, h3 {
-    color: #B30500;
-    font-family: Georgia, serif;
-    text-align: center;
-  }
+    body {
+      background-color: #fffaf0;
+      color: #222222;
+      font-family: Arial, sans-serif;
+      font-size: 100%;
+    }
 
-  p, li, blockquote {
-    line-height: 1.6;
-  }
+    h1, h2, h3 {
+      color: #B30500;
+      font-family: 'Staatliches', Georgia, serif;
+      text-align: center;
+      letter-spacing: 1px;
+      margin: 0.5em auto;
+      line-height: 1.2em;
+    }
 
-  a:link {
-    color: #412BFB;
-    text-decoration: underline;
-  }
+    p, li, blockquote {
+      line-height: 1.6;
+    }
 
-  a:visited {
-    color: #1300AF;
-  }
+    a:link {
+      color: #412BFB;
+      text-decoration: underline;
+    }
 
-  a:hover {
-    color: #FFCA0B;
-    text-decoration: none;
-  }
+    a:visited {
+      color: #1300AF;
+    }
 
-  img {
-    padding: 10px;
-    height: 200px;
-    width: auto;
-  }
+    a:hover {
+      color: #FFCA0B;
+      text-decoration: none;
+    }
 
-  .float-left {
-    float: left;
-    padding: 10px;
-  }
+    img {
+      padding: 10px;
+      height: 200px;
+      width: auto;
+    }
 
-  .float-right {
-    float: right;
-    padding: 10px;
-  }
+    .float-left {
+      float: left;
+      padding: 10px;
+    }
 
-  .clear {
-    clear: both;
-  }
+    .float-right {
+      float: right;
+      padding: 10px;
+    }
 
-  ul {
-    margin-left: 20px;
-  }
+    .clear {
+      clear: both;
+    }
 
-  .center-text {
-    text-align: center;
-  }
+    ul {
+      margin-left: 20px;
+    }
 
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin-top: 20px;
-  background-color: #fffefb;
-  color: #222222;
-  font-family: Arial, sans-serif;
-  border-radius: 8px;
-  overflow: hidden;
-}
+    .center-text {
+      text-align: center;
+    }
 
-caption {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  font-family: Georgia, serif;
-  color: #B30500;
-  font-weight: bold;
-  text-align: center;
-}
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      background-color: #fffefb;
+      color: #222222;
+      font-family: Arial, sans-serif;
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
-th {
-  background-color: #f4a261;
-  color: white;
-  padding: 10px;
-  font-size: 1.1em;
-  text-align: left;
-  border: 1px solid #fffefb;
-}
+    caption {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      font-family: 'Staatliches', Arial, sans-serif;
+      color: #B30500;
+      font-weight: bold;
+      text-align: center;
+    }
 
-td {
-  background-color: #fff3e0;
-  border: 1px solid #f4a261;
-  padding: 10px;
-  font-size: 0.95em;
-  transition: background-color 0.3s ease;
-}
+    th {
+      background-color: #f4a261;
+      color: #B30500;
+      padding: 10px;
+      font-size: 1.1em;
+      text-align: left;
+      border: 1px solid #fffefb;
+      font-family: 'Staatliches', Georgia, serif;
+      letter-spacing: 1px;
+    }
 
-/* Hover effect on each box */
-td:hover {
-  background-color: #f4a261;
-  color: white;
-}
+    td {
+      background-color: #fff3e0;
+      border: 1px solid #f4a261;
+      padding: 10px;
+      font-size: 0.95em;
+      transition: background-color 0.3s ease;
+    }
 
-/* Rounded outer corners */
-thead tr:first-child th:first-child {
-  border-top-left-radius: 8px;
-}
-thead tr:first-child th:last-child {
-  border-top-right-radius: 8px;
-}
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 8px;
-}
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 8px;
-}
-</style>
+    td:hover {
+      background-color: #f4a261;
+      color: white;
+    }
+
+    thead tr:first-child th:last-child {
+      border-top-right-radius: 8px;
+    }
+
+    thead tr:first-child th:first-child {
+      border-top-left-radius: 8px;
+    }
+
+    tbody tr:last-child td:first-child {
+      border-bottom-left-radius: 8px;
+    }
+
+    tbody tr:last-child td:last-child {
+      border-bottom-right-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -139,89 +150,88 @@ tbody tr:last-child td:last-child {
 <hr>
 
 <div id="began">
-<h2>How it all Began...</h2>
-<p><img src="Images/Chef4Sm.jpg" width="300" height="200" class="float-left">
-In 1997, Master Chef Pierre DeBois moved to Utah from New York where he owned and managed a small restaurant called Ma Maison (My Home). His restaurant specialized in French Nouvelle cuisine. Once in Salt Lake City, he realized that the average Utahan doesn't have much appreciation for high cuisine. Pierre and his family were invited to a neighborhood block party one summer and it was there he had his first encounter with Native Cooking of Utah. Pierre noticed how much the locals enjoyed the items brought to this pot luck dinner. They often went back for seconds or thirds. How could he capture this enthusiasm for eating and translate it into his own cooking? In order to answer this question, he began a year-long quest to find out the reason for the success of Utah cuisine.</p>
-<div class="clear"></div>
-<p>Pierre discovered there are some things that set apart Utah cooking from others:</p>
-<ul>
-  <li>Simplicity in preparation</li>
-  <li>Inexpensive ingredients</li>
-  <li>Ethnic variations available</li>
-  <li>Feeds large amounts of people</li>
-  <li>Ease of Serving and Cleanup</li>
-</ul>
-<a href="#top">Return to Top</a>
-<div class="clear"></div>
-<hr>
+  <h2>How it all Began...</h2>
+  <p><img src="Images/Chef4Sm.jpg" width="300" height="200" class="float-left">
+  In 1997, Master Chef Pierre DeBois moved to Utah from New York where he owned and managed a small restaurant called Ma Maison (My Home). His restaurant specialized in French Nouvelle cuisine. Once in Salt Lake City, he realized that the average Utahan doesn't have much appreciation for high cuisine. Pierre and his family were invited to a neighborhood block party one summer and it was there he had his first encounter with Native Cooking of Utah. Pierre noticed how much the locals enjoyed the items brought to this pot luck dinner. They often went back for seconds or thirds. How could he capture this enthusiasm for eating and translate it into his own cooking? In order to answer this question, he began a year-long quest to find out the reason for the success of Utah cuisine.</p>
+  <div class="clear"></div>
+  <p>Pierre discovered there are some things that set apart Utah cooking from others:</p>
+  <ul>
+    <li>Simplicity in preparation</li>
+    <li>Inexpensive ingredients</li>
+    <li>Ethnic variations available</li>
+    <li>Feeds large amounts of people</li>
+    <li>Ease of Serving and Cleanup</li>
+  </ul>
+  <a href="#top">Return to Top</a>
+  <div class="clear"></div>
+  <hr>
 </div>
 
 <div id="online">
-<h2>Native Cooking of Utah Goes Online...</h2>
-<p><img src="Images/Food1Sm.jpg" width="300" height="200" class="float-right">
-So in 2010, Pierre DeBois began gathering recipes for an online cookbook titled: Native Cooking of Utah. Everywhere he could, he begged, borrowed or stole the secret recipes of popular Utah cooks. Many of these recipes had been handed down from generation to generation. In fact, the most well known recipe for green jello even was honored with its own Olympic pin.
+  <h2>Native Cooking of Utah Goes Online...</h2>
+  <p><img src="Images/Food1Sm.jpg" width="300" height="200" class="float-right">
+  So in 2010, Pierre DeBois began gathering recipes for an online cookbook titled: Native Cooking of Utah. Everywhere he could, he begged, borrowed or stole the secret recipes of popular Utah cooks. Many of these recipes had been handed down from generation to generation. In fact, the most well known recipe for green jello even was honored with its own Olympic pin.
 
-The web site for Native Cooking of Utah organizes the recipes by area of the state. For example, salt water taffy from Salt Lake City, and Bear Lake Raspberry ice cream from Bear Lake. Chef Pierre DeBois has traveled the state to gather these recipes. Read the Guestbook to see comments and testimonials from satisfied cooks.</p>
-<a href="#top">Return to Top</a>
-<div class="clear"></div>
-<hr>
+  The web site for Native Cooking of Utah organizes the recipes by area of the state. For example, salt water taffy from Salt Lake City, and Bear Lake Raspberry ice cream from Bear Lake. Chef Pierre DeBois has traveled the state to gather these recipes. Read the Guestbook to see comments and testimonials from satisfied cooks.</p>
+  <a href="#top">Return to Top</a>
+  <div class="clear"></div>
+  <hr>
 </div>
 
 <div id="future">
-<h2>Looking to the Future...</h2>
-<p><img src="Images/Pasta1Sm.jpg" width="300" height="200" class="float-left">
-Native Cooking of Utah has become one of the most popular cooking sites in the Western U.S. with over 10,000 hits per week. Chef Pierre DeBois has plans to expand the site to include cooking utensils and kitchen accessories used or hand-made by native Utahans. Not only can you use this web site to help you to create true Utahan cuisine, now you can look the part. You will find these added treats online after January, 2013.</p>
+  <h2>Looking to the Future...</h2>
+  <p><img src="Images/Pasta1Sm.jpg" width="300" height="200" class="float-left">
+  Native Cooking of Utah has become one of the most popular cooking sites in the Western U.S. with over 10,000 hits per week. Chef Pierre DeBois has plans to expand the site to include cooking utensils and kitchen accessories used or hand-made by native Utahans. Not only can you use this web site to help you to create true Utahan cuisine, now you can look the part. You will find these added treats online after January, 2013.</p>
 
-<table>
-  <caption>Added Treats</caption>
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Cooking Pots</td>
-      <td>Most often rounded with open mouths and somewhat sharply rounded bottoms.</td>
-    </tr>
-    <tr>
-      <td>Antique Bowls</td>
-      <td>Wonderfully carved, thin and lightweight despite its large dimensions-13” X 18”.</td>
-    </tr>
-    <tr>
-      <td>Gourds</td>
-      <td>Made functional light-weight bowls, dippers, and spoons.</td>
-    </tr>
-    <tr>
-      <td>Soapstone Bowl</td>
-      <td>Not as finely made, but fairly representative of many found in archaeological digs.</td>
-    </tr>
-    <tr>
-      <td>Deer Jaw Bone</td>
-      <td>Works very well at scraping juicy corn kernels from the cob.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>Added Treats</caption>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cooking Pots</td>
+        <td>Most often rounded with open mouths and somewhat sharply rounded bottoms.</td>
+      </tr>
+      <tr>
+        <td>Antique Bowls</td>
+        <td>Wonderfully carved, thin and lightweight despite its large dimensions-13” X 18”.</td>
+      </tr>
+      <tr>
+        <td>Gourds</td>
+        <td>Made functional light-weight bowls, dippers, and spoons.</td>
+      </tr>
+      <tr>
+        <td>Soapstone Bowl</td>
+        <td>Not as finely made, but fairly representative of many found in archaeological digs.</td>
+      </tr>
+      <tr>
+        <td>Deer Jaw Bone</td>
+        <td>Works very well at scraping juicy corn kernels from the cob.</td>
+      </tr>
+    </tbody>
+  </table>
 
-<a href="#top">Return to Top</a>
-<div class="clear"></div>
-<hr>
+  <a href="#top">Return to Top</a>
+  <div class="clear"></div>
+  <hr>
 </div>
 
 <div id="press">
-<h2>Press Releases</h2>
-<img src="Images/tableset.jpg" width="300" height="200" class="float-right">
+  <h2>Press Releases</h2>
+  <img src="Images/tableset.jpg" width="300" height="200" class="float-right">
 
-<h3>Good Eating, October 2011:</h3>
-<p>"Master Chef Pierre DeBois captures the Native Cooking of Utah in his online web site: Native Cooking of Utah. Browsing his web site is like having a family reunion where everyone brings along their favorite recipes and shares them. If you are an Utahan and no longer live in the state, these recipes will make you home sick for that down home cooking."</p>
+  <h3>Good Eating, October 2011:</h3>
+  <p>"Master Chef Pierre DeBois captures the Native Cooking of Utah in his online web site: Native Cooking of Utah. Browsing his web site is like having a family reunion where everyone brings along their favorite recipes and shares them. If you are an Utahan and no longer live in the state, these recipes will make you home sick for that down home cooking."</p>
 
-<h3>Utah Travel Council's Top 100 Sites:</h3>
-<p>"Site Number 66 - Whether you are living in Utah or just visiting, you can cook like a true native if you use Native Cooking of Utah as your guide. This web site will allow you to come up to speed and fit in like a native Utahan right away. Reap praise from strangers and surprise your family with your down home cooking. You won't have to worry about storing leftovers with these tried and true recipes."</p>
+  <h3>Utah Travel Council's Top 100 Sites:</h3>
+  <p>"Site Number 66 - Whether you are living in Utah or just visiting, you can cook like a true native if you use Native Cooking of Utah as your guide. This web site will allow you to come up to speed and fit in like a native Utahan right away. Reap praise from strangers and surprise your family with your down home cooking. You won't have to worry about storing leftovers with these tried and true recipes."</p>
 
-<div class="clear"></div>
-
-<a href="#top">Return to Top</a>
+  <div class="clear"></div>
+  <a href="#top">Return to Top</a>
 </div>
 
 </body>
