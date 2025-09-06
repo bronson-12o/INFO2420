@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color: #f0f0f0; /* Or use background image */
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  width: 900px;
+  height: 200px;
+  background-color: #cccccc;
+}
+
+#logo {
+  float: left;
+}
+
+#banner {
+  float: right;
+}
+
+nav {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  margin: 2px;
+}
+
+nav a:hover {
+  background-color: #888;
+}
+
+section {
+  width: 900px;
+  background-image: url('Images/backimage.jpg');
+  background-repeat: repeat-y;
+  padding: 10px;
+}
+
+article {
+  width: 800px;
+  margin: auto;
+}
+
+article h1, article h2 {
+  text-align: left;
+}
+
+article p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+footer {
+  width: 900px;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
